@@ -10,9 +10,9 @@
       "request": "launch",
       "preLaunchTask": "build",
       // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/netIdent/bin/Debug/net5.0/netIdent.dll",
+      "program": "${workspaceFolder}/src/netIdent/bin/Debug/net5.0/netIdent.dll",
       "args": ["update", "-i", "enp0s25", "-s", "3128164352", "-d", "806354944", "-m", "0002A266ACDD", "192.168.1.222"],
-      "cwd": "${workspaceFolder}/netIdent",
+      "cmd": "${workspaceFolder}/netIdent",
       // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
       "console": "internalConsole",
       "stopAtEntry": false
