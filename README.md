@@ -76,16 +76,17 @@ the has to be set like the resived one:
 
 + SerialNumber ==> -s, --serial-number 
 + DeviceType ==> -d, --devive-type 
-when the ip address was sacsesfully set you resive:
+
+when the ip address was successfully set you resive similare out like the scan output but with the corect "IpAddress": "192.168.0.222":
 
 ```json
 {
   "MagicCookie": "HINI",
-  "OpCode": 33554432,
+  "OpCode": :67108864,
   "ErrorCode": 0,
   "MasterIpAddress": "192.168.1.10",
   "PortNumber": 25384,
-  **"IpAddress": "192.168.0.222",**
+  "IpAddress": "192.168.0.222",
   "MacAddress": "XXXXXXXXXX",
   "DeviceType":DDDDDDD,
   "SerialNumber":SSSSSS,
