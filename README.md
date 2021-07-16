@@ -38,14 +38,31 @@ dotnet build
 
 ### Scan for devices
 
+run 
+
 ```bash
 ./src/netIdent/bin/Debug/net5.0/netIdent scan -i enp0s25 
 ```
 
-you resive 
+you resive:
 
 ```json
-{"MagicCookie":"HINI","OpCode":33554432,"ErrorCode":0,"MasterIpAddress":"192.168.1.10","PortNumber":25384,"IpAddress":"192.168.0.1","MacAddress":"XXXXXXXXXX","DeviceType":DDDDDDD,"SerialNumber":SSSSSS,"DeviceName":"netHOST","AddrSwitch":0,"Version":3892510720,"TransactionID":2330697283,"HiniFlags":2113929216}
+{
+  "MagicCookie": "HINI",
+  "OpCode": 33554432,
+  "ErrorCode": 0,
+  "MasterIpAddress": "192.168.1.10",
+  "PortNumber": 25384,
+  "IpAddress": "192.168.0.1",
+  "MacAddress": "XXXXXXXXXX",
+  "DeviceType":DDDDDDD,
+  "SerialNumber":SSSSSS,
+  "DeviceName": "netHOST",
+  "AddrSwitch": 0,
+  "Version": 3892510720,
+  "TransactionID": 2330697283,
+  "HiniFlags": 2113929216
+}
 ```
 
 ### Set the ip address for a particular device
@@ -59,3 +76,23 @@ the has to be set like the resived one:
 
 + SerialNumber ==> -s, --serial-number 
 + DeviceType ==> -d, --devive-type 
+when the ip address was sacsesfully set you resive:
+
+```json
+{
+  "MagicCookie": "HINI",
+  "OpCode": 33554432,
+  "ErrorCode": 0,
+  "MasterIpAddress": "192.168.1.10",
+  "PortNumber": 25384,
+  **"IpAddress": "192.168.0.222",**
+  "MacAddress": "XXXXXXXXXX",
+  "DeviceType":DDDDDDD,
+  "SerialNumber":SSSSSS,
+  "DeviceName": "netHOST",
+  "AddrSwitch": 0,
+  "Version": 3892510720,
+  "TransactionID": 2330697283,
+  "HiniFlags": 2113929216
+}
+```
