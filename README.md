@@ -55,8 +55,8 @@ you resive:
   "PortNumber": 25384,
   "IpAddress": "192.168.0.1",
   "MacAddress": "XXXXXXXXXX",
-  "DeviceType":DDDDDDD,
-  "SerialNumber":SSSSSS,
+  "DeviceType": DDDDDDD,
+  "SerialNumber": SSSSSS,
   "DeviceName": "netHOST",
   "AddrSwitch": 0,
   "Version": 3892510720,
@@ -88,12 +88,12 @@ when the ip address was successfully set you resive similare out like the scan o
   "PortNumber": 25384,
   "IpAddress": "192.168.0.222",
   "MacAddress": "XXXXXXXXXX",
-  "DeviceType":DDDDDDD,
-  "SerialNumber":SSSSSS,
+  "DeviceType": DDDDDDD,
+  "SerialNumber": SSSSSS,
   "DeviceName": "netHOST",
   "AddrSwitch": 0,
   "Version": 3892510720,
-  "TransactionID": 2330697283,
+  "TransactionID": 1133640155,
   "HiniFlags": 2113929216
 }
 ```
