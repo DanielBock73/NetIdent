@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Hilscher.NetIdent\src\Hilscher.NetIdent\Hilscher.NetIdent.csproj" />
+    <ProjectReference Include="..\..\..\Hilscher.NetIdent\src\Hilscher.NetIdent\Hilscher.NetIdent.csproj" Condition="Exists('..\..\..\Hilscher.NetIdent\src\Hilscher.NetIdent\Hilscher.NetIdent.csproj')"/>
   </ItemGroup>
 
 </Project>
