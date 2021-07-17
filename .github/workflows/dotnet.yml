@@ -27,9 +27,6 @@ jobs:
     - name: Build
       run: |
         dotnet build -p:Configuration=Release \
-                     -p:ProjectUrl=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git \
-                     -p:RepositoryUrl=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/index.json \
-                     -p:RepositoryType=git \
                      --no-restore
     - name: Package the project
       run:  dotnet pack --configuration Release
