@@ -25,9 +25,9 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore \
-                        -p:Configuration=Release \
-                        -p:RepositoryUrl=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git
+      run: dotnet build -p:Configuration=Release \
+                        -p:RepositoryUrl=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git \
+                        --no-restore
     - name: Package the project
       run:  dotnet pack --configuration Release
     - name: Deployment the package
