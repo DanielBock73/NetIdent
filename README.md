@@ -16,7 +16,8 @@ git clone https://github.com/DanielBock73/NetIdent.git
 
 ist schut looks like this
 
-![image](https://user-images.githubusercontent.com/8033405/125979551-19c7d106-3e89-494c-88f5-804c02d63052.png)
+![image](https://user-images.githubusercontent.com/8033405/126030024-4d507b0d-8a8b-4e47-aeb0-0e37c65bf2c9.png)
+
 
 ### Step 2
 
