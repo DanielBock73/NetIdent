@@ -7,7 +7,7 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>netident</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
-    <license type="MIT"/>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl></RepositoryUrl>
   </PropertyGroup>
 
