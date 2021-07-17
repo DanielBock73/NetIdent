@@ -84,7 +84,7 @@ when the ip address was successfully set you receive similar out like the scan o
 ```json
 {
   "MagicCookie": "HINI",
-  "OpCode": :67108864,
+  "OpCode": 67108864,
   "ErrorCode": 0,
   "MasterIpAddress": "192.168.1.10",
   "PortNumber": 25384,
