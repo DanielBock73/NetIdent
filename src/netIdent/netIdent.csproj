@@ -8,7 +8,6 @@
     <ToolCommandName>netident</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl></RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
