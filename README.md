@@ -1,14 +1,14 @@
-# Hilscher netIdent Cli
+# Hilscher netIdent cli
 
-The Ethernet Device Configuration Tool is used for the following purposes:
+The netIdent ethernet device configuration tool is used for the following purposes:
 
-Set IP-adress via Hilscher protocol "NetIdent", to be able to configure Hilscher devices via TCP (e.g. NL 50 / 51, NT 50, NetHOST)
+Set IP-address via Hilscher protocol "NetIdent", to be able to configure Hilscher devices via TCP (e.g. NL 50 / 51, NT 50, NetHOST)
 
 ## Install
 
 ### Step 1
 
-Clone the folowing repos
+Clone the following repos:
 
 ```bash
 git clone https://github.com/DanielBock73/Hilscher.NetIdent.git
@@ -46,7 +46,7 @@ run
 ./src/netIdent/bin/Debug/net5.0/netIdent scan -i enp0s25 
 ```
 
-you resive:
+you receive:
 
 ```json
 {
@@ -56,9 +56,9 @@ you resive:
   "MasterIpAddress": "192.168.1.10",
   "PortNumber": 25384,
   "IpAddress": "192.168.0.1",
-  "MacAddress": "XXXXXXXXXX",
-  "DeviceType": DDDDDDD,
-  "SerialNumber": SSSSSS,
+  "MacAddress": "XXXXXX",
+  "DeviceType": 999999,
+  "SerialNumber": 888888,
   "DeviceName": "netHOST",
   "AddrSwitch": 0,
   "Version": 3892510720,
@@ -71,15 +71,15 @@ you resive:
 
 
 ```bash
-./src/netIdent/bin/Debug/net5.0/netIdent update -i enp0s25 -s SSSSSS -d DDDDDDD 192.168.1.222
+./src/netIdent/bin/Debug/net5.0/netIdent update -i enp0s25 -s 888888 -d 999999 192.168.1.222
 ```
 
-the has to be set like the resived one:
+the has to be set like the receive one:
 
 + SerialNumber ==> -s, --serial-number 
 + DeviceType ==> -d, --devive-type 
 
-when the ip address was successfully set you resive similare out like the scan output but with the corect "IpAddress": "192.168.0.222":
+when the ip address was successfully set you receive similar out like the scan output but with the correct "IpAddress": "192.168.0.222":
 
 ```json
 {
@@ -90,8 +90,8 @@ when the ip address was successfully set you resive similare out like the scan o
   "PortNumber": 25384,
   "IpAddress": "192.168.0.222",
   "MacAddress": "XXXXXXXXXX",
-  "DeviceType": DDDDDDD,
-  "SerialNumber": SSSSSS,
+  "DeviceType": 999999,
+  "SerialNumber": 888888,
   "DeviceName": "netHOST",
   "AddrSwitch": 0,
   "Version": 3892510720,
