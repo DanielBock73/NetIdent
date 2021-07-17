@@ -8,7 +8,8 @@
     <ToolCommandName>netident</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://nuget.pkg.github.com/DanielBock73/index.json</RepositoryUrl>
+    <PackageProjectUrl>https://nuget.pkg.github.com/DanielBock73/<PackageProjectUrl>
+    <RepositoryUrl>https://nuget.pkg.github.com/DanielBock73/RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
