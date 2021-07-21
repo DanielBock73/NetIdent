@@ -7,7 +7,7 @@ on:
     branches: [ main ]
     
 env:
-  DOTNET_CLI_TELEMETRY_OPTOUT: true    
+  DOTNET_CLI_TELEMETRY_OPTOUT: false    
 
 jobs:
   build:
@@ -39,4 +39,4 @@ jobs:
     - name: Deployment the package
       env:
         GITHUB_PAT_NUGET: ${{ secrets.GITHUB_PAT_NUGET }}    
-      run: gpr push -k ${{secrets.GITHUB_PAT_NUGET}} "src/netIdent/nupkg/*.nupkg" || true
+      run: gpr push --api-key ${{secrets.GITHUB_PAT_NUGET}} "./src/netIdent/nupkg/*.nupkg" || true
