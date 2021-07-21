@@ -34,5 +34,4 @@ jobs:
     - name: Install gpr
       run: dotnet tool install gpr --global      
     - name: Deployment the package         
-      run: |
-        gpr push ./**/*.nupkg -r 'DanielBock73/NetIdent'       
+      run: gpr push ./**/*.nupkg -r 'DanielBock73/NetIdent'
