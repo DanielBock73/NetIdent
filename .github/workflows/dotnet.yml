@@ -39,4 +39,4 @@ jobs:
     - name: Deployment the package
       env:
         GITHUB_PAT_NUGET: ${{ secrets.GITHUB_PAT_NUGET }}    
-      run: find -name "*.nupkg" -print -exec gpr push -k "$GITHUB_PAT_NUGET" {} \;
+      run: gpr push -k ${{secrets.GITHUB_PAT_NUGET}} "src/netIdent/nupkg/*.nupkg" || true
