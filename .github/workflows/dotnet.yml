@@ -39,4 +39,4 @@ jobs:
     - name: Deployment the package
       env:
         GITHUB_PAT_NUGET: ${{ secrets.GITHUB_PAT_NUGET }}    
-      run: gpr push --api-key ${{secrets.GITHUB_PAT_NUGET}} ./**/*.nupkg
+      run: gpr push --api-key "$GITHUB_PAT_NUGET" ./**/*.nupkg
