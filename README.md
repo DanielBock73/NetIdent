@@ -77,7 +77,7 @@ you receive:
 the has to be set like the receive one:
 
 + SerialNumber ==> -s, --serial-number 
-+ DeviceType ==> -d, --devive-type 
++ DeviceType ==> -d, --device-type 
 
 when the ip address was successfully set you receive similar out like the scan output but with the correct "IpAddress": "192.168.0.222":
 
