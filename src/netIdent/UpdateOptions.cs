@@ -10,8 +10,8 @@ namespace netIdent
     [Option('i', "interface", Required = true, HelpText = "Listen on interface. If unspecified, tcpdump searches the system interface list for the lowest numbered, configured up interface (excluding loopback), which may turn out to be, for example, ``eth0''.")]
     public string Interface { get; set; }
 
-    [Option('d', "devive-type", Required = true, HelpText = "Only if the devive type in the request corresponds with the devive type of the device, the device will acept the request.")]
-    public uint DeviveType { get; set; }
+    [Option('d', "device-type", Required = true, HelpText = "Only if the device type in the request corresponds with the device type of the device, the device will acept the request.")]
+    public uint DeviceType { get; set; }
 
     [Option('s', "serial-number", Required = false, HelpText = "Only if the serial number in the request corresponds with the serial number of the device, the device will acept the request.")]
     public uint SerialNumber { get; set; }
@@ -27,5 +27,3 @@ namespace netIdent
     public string IpAddress { get; set; }
   }
 }
-
-
