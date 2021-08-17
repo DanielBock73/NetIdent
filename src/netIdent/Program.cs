@@ -83,11 +83,10 @@ namespace netIdent
 
       var data = new NetIdentProtocolMessage
       {
-        // DeviceName = "fred",
         MasterIpAddress = netAdapter.Item2,
         PortNumber = NetIdentPorts.MasterPort,
         SerialNumber = options.SerialNumber,
-        DeviceType = options.DeviveType,
+        DeviceType = options.DeviceType,
         IpAddress = IPAddress.Parse(options.IpAddress),
         MacAddress = string.IsNullOrWhiteSpace(options.MacAddress) ? NetIdentProtocolMessage.MacAddressZero : PhysicalAddress.Parse(options.MacAddress),
         OpCode = OpCodeEnum.SET_IP_ADDRESS_REQUEST,
