@@ -40,8 +40,6 @@ dotnet build
 
 ### Scan for devices
 
-run 
-
 ```bash
 ./src/netIdent/bin/Debug/net5.0/netIdent scan -i enp0s25 
 ```
