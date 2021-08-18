@@ -34,13 +34,7 @@ jobs:
     - name: Determine Version
       id: gitversion
       uses: gittools/actions/gitversion/execute@v0.9.7
-    - name: Build      
-    #   run: |
-    #     dotnet build -p:Configuration=Release \
-    #                  -p:Version=${{ steps.gitversion.outputs.NuGetVersionV2 }} \
-    #                  -p:AssemblyVersion=${{ steps.gitversion.outputs.AssemblySemVer }} \
-    #                  --no-restore
-    # - name: Package project
+    - name: Build
       run: |
         dotnet pack -p:Configuration=Release \
                     -p:PackageVersion=${{ steps.gitversion.outputs.NuGetVersionV2 }}.${{ steps.gitversion.outputs.BuildMetaData }}
