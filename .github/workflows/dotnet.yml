@@ -24,7 +24,7 @@ jobs:
     - name: Setup GitVersion
       uses: gittools/actions/gitversion/setup@v0.9
       with:
-          versionSpec: '5.1.x'
+          versionSpec: '5.5.x'
     - name: nuget add source
       run: dotnet nuget add source --username DanielBock73 --password '${{ secrets.GITHUB_TOKEN }}' --store-password-in-clear-text --name github "https://nuget.pkg.github.com/DanielBock73/index.json"
     - name: Restore dependencies
