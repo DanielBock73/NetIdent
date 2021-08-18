@@ -31,7 +31,7 @@ jobs:
                      --no-restore
     - name: Package the project
       run:  dotnet pack --configuration Release
+    - name: Install gpr
+      run: dotnet tool install gpr --global
     - name: Deployment the package
-      env:
-        GITHUB_PAT_NUGET: ${{ secrets.GITHUB_PAT_NUGET }}
-      run: dotnet nuget push "src/netIdent/bin/Release/*.nupkg" --api-key "$GITHUB_PAT_NUGET" --source github
+      run: gpr push ./**/*.nupkg -r 'DanielBock73/NetIdent'
