@@ -33,7 +33,7 @@ jobs:
       id: gitversion
       uses: gittools/actions/gitversion/execute@v0.9.7
     - name: Build      
-    - run: |
+      run: |
         dotnet build -p:Configuration=Release \
                      -p:Version=${{ steps.gitversion.outputs.assemblySemVer }} \
                      --no-restore
