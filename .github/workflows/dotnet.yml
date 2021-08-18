@@ -39,7 +39,6 @@ jobs:
         dotnet build -p:Configuration=Release \
                      -p:Version=${{ steps.gitversion.outputs.NuGetVersionV2 }} \
                      -p:AssemblyVersion=${{ steps.gitversion.outputs.AssemblySemVer }} \
-                     -p:InformationalVersion=${{ steps.gitversion.outputs.InformationalVersion }} \                     
                      --no-restore
     - name: Package the project
       run:  dotnet pack --configuration Release 
