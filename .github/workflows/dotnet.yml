@@ -34,7 +34,7 @@ jobs:
       uses: gittools/actions/gitversion/execute@v0.9
       run: |
         dotnet build -p:Configuration=Release \
-                     -p:Version=${{ steps.gitversion.outputs.assemblySemVer }}
+                     -p:Version=${{ steps.gitversion.outputs.assemblySemVer }} \
                      --no-restore
     - name: Package the project
       run:  dotnet pack --configuration Release 
