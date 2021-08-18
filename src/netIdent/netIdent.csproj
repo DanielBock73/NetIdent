@@ -5,7 +5,7 @@
     <TargetFrameworks>net5.0</TargetFrameworks>
 
     <PackAsTool>true</PackAsTool>
-    <ToolCommandName>netIdent</ToolCommandName>
+    <ToolCommandName>netident</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/DanielBock73/NetIdent/</PackageProjectUrl>
