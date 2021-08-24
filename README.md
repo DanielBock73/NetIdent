@@ -69,7 +69,7 @@ you receive:
 
 
 ```bash
-./src/netIdent/bin/Debug/net5.0/netIdent update -i enp0s25 -s 888888 -d 999999 192.168.1.222
+$ netIdent update -i enp0s25 -s 888888 -d 999999 192.168.1.222
 ```
 
 the has to be set like the receive one:
@@ -97,3 +97,16 @@ when the ip address was successfully set you receive similar out like the scan o
   "HiniFlags": 2113929216
 }
 ```
+
+How to get `--interface` on Windows
+
+```pws
+PS> Get-NetIPAddress | Select-Object -Property InterfaceAlias,IPAddress
+```
+
+Run on Powershell and get as `PSCustomObject`.
+
+```pwsh
+PS> netIdent scan -i enp0s25 | ConvertFrom-Json 
+```
+
