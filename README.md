@@ -69,7 +69,7 @@ you receive:
 
 
 ```bash
-$ netIdent update -i enp0s25 -s 888888 -d 999999 192.168.1.222
+netIdent update -i enp0s25 -s 888888 -d 999999 192.168.1.222
 ```
 
 the has to be set like the receive one:
@@ -101,12 +101,19 @@ when the ip address was successfully set you receive similar out like the scan o
 How to get `--interface` on Windows
 
 ```pws
-PS> Get-NetIPAddress | Select-Object -Property InterfaceAlias,IPAddress
+Get-NetIPAddress | Select-Object -Property InterfaceAlias,IPAddress
 ```
+Output:
+```
+InterfaceAlias   IPAddress
+--------------   ---------
+vEthernet (nat)  192.168.0.100
+```
+
 
 Run on Powershell and get as `PSCustomObject`.
 
 ```pwsh
-PS> netIdent scan -i enp0s25 | ConvertFrom-Json 
+netIdent scan -i enp0s25 | ConvertFrom-Json 
 ```
 
