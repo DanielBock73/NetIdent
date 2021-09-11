@@ -116,3 +116,8 @@ Run on Powershell and get as `PSCustomObject`.
 netIdent scan -i 'vEthernet (nat)' | ConvertFrom-Json 
 ```
 
+## Disclaimer
+
+Hopefully this is obvious, but:
+
+> This is an open source project (under the [MIT license]), and all contributors are volunteers. All commands are executed at your own risk.
