@@ -110,10 +110,9 @@ InterfaceAlias   IPAddress
 vEthernet (nat)  192.168.0.100
 ```
 
-
 Run on Powershell and get as `PSCustomObject`.
 
 ```pwsh
-netIdent scan -i enp0s25 | ConvertFrom-Json 
+netIdent scan -i 'vEthernet (nat)' | ConvertFrom-Json 
 ```
 
