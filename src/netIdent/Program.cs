@@ -61,6 +61,11 @@ namespace netIdent
         data.SerialNumber = options.SerialNumber;
       }
 
+      if (options.Verbose)
+      {
+        Console.WriteLine(JsonConvert.SerializeObject(data, Formatting.None, settings));
+      }
+
       var task = NetIdentSocket.SendAsync(data, (p) =>
       {
         string json = JsonConvert.SerializeObject(p, Formatting.None, settings);
@@ -91,8 +96,9 @@ namespace netIdent
         MacAddress = string.IsNullOrWhiteSpace(options.MacAddress) ? NetIdentProtocolMessage.MacAddressZero : PhysicalAddress.Parse(options.MacAddress),
         OpCode = OpCodeEnum.SET_IP_ADDRESS_REQUEST,
       };
-      if(options.Verbose){
-        Console.WriteLine($"Sende data: {JsonConvert.SerializeObject(data, Formatting.None, settings)}");
+      if (options.Verbose)
+      {
+        Console.WriteLine(JsonConvert.SerializeObject(data, Formatting.None, settings));
       }
 
       var task = NetIdentSocket.SendAsync(data, (p) =>
